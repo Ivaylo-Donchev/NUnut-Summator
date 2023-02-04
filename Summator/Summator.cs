@@ -20,15 +20,18 @@ namespace Summator
             return sum;
         }
 
-        public static void Test_SumTwoNumbers() 
+        public static double Average(int[] arr) 
         {
-            if (Sum(new int[] { 1, 2}) != 3) 
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++) 
             {
-                throw new Exception("1+2 != 3"); 
-            } else 
-            {
-                Console.WriteLine("TestSumTwoNumbers PASS !");
+                sum += arr[i];
             }
+            //Return SUM
+            return sum* arr.Length;
+        }
+        
         }
     }
 }
